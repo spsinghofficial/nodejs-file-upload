@@ -1,0 +1,12 @@
+//- index.pug
+doctype html
+html
+    head
+        title File Upload
+        link(rel='stylesheet', href='/styles.css')
+    body
+        h1 Upload a File
+        form(method='POST', enctype='multipart/form-data', action='/upload')
+            input(type='file', name='file')
+            br
+            button(type='submit') Upload
